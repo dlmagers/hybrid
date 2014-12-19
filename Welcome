@@ -1,0 +1,29 @@
+<ons-navigator animation="slide" var="main">
+  <ons-page>
+    <ons-toolbar modifier="transparent">
+      <div class="left">
+        <ons-toolbar-button ng-click="menu.toggle()"><ons-icon icon="ion-navicon-round" style="color: white; font-size: 28px;" fixed-width="false"></ons-icon></ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+
+    <div class="details-content glass">
+      <div class="welcome">
+        <h2 class="home-title">Bank of Dorr</h2>
+        <p class="subtitle">Courage, Strength, and Endurance</p>
+
+        <ons-button modifier="ghost large" ng-click="main.pushPage('branches.html');">All Branches</ons-button>
+        <ons-button modifier="ghost large" ng-click="main.pushPage('near.html');">Find Near Me</ons-button>
+      </div>
+      <div class="blur">
+        <img src="img/bg.png" class="bg">
+      </div>
+    </div>
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+     <filter id="blur">
+       <feGaussianBlur stdDeviation="10" />
+       </filter>
+    </svg> 
+
+  </ons-page>
+</ons-navigator>
